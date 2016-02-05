@@ -1,0 +1,24 @@
+{
+  "lang": "ru",
+  "name": "MetaDelegate - торговый представитель",
+  "short_name": "MetaDelegate",
+  "icons": [
+    {
+      "src": "/metadelegate/dist/imgs/fav-md32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/metadelegate/dist/imgs/fav-md144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }],
+  "background_color": "#ffffff",
+  "splash_screens": [{
+    "src": "/metadelegate/dist/imgs/splash.gif",
+    "sizes": "320x240"
+  }],
+  "scope": "/metadelegate/",
+  "start_url": "/metadelegate/index.html",
+  "display": "standalone"
+}

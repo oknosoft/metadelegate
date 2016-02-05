@@ -1,0 +1,40 @@
+CACHE MANIFEST
+# 000000000001
+
+# Additional resources to cache
+CACHE:
+
+# Заголовок и библиотеки
+index.html
+//cdn.jsdelivr.net/g/alasql,metadata@0.9.206(dhtmlx.min.js+metadata.min.js)
+
+# Эти позиции включаем только в продакшене
+dist/metadelegate.min.js
+
+data/meta.json?v=201601220000
+data/meta_patch.json?v=201601220000
+data/zones/0/p_0.json?v=201601220000
+data/zones/0/p_1.json?v=201601220000
+data/zones/0/p_2.json?v=201601220000
+data/zones/0/ireg.json?v=201601220000
+
+# css и картинки
+
+//cdn.jsdelivr.net/fontawesome/4.5/css/font-awesome.min.css
+//cdn.jsdelivr.net/fontawesome/4.5/fonts/fontawesome-webfont.woff2?v=4.5.0
+
+//oknosoft.github.io/metastore/templates/imgs/fav-md32.png
+//oknosoft.github.io/metastore/templates/imgs/fav-md144.png
+
+//cdn.jsdelivr.net/g/metadata(dhx_terrace.css+metadata.css)
+
+# offline.html will be displayed if the user is offline
+# FALLBACK:
+# / offline.html
+
+# All other resources (e.g. sites) require the user to be online.
+NETWORK:
+
+# данные - xml-ки форм, панелей и менюшек
+
+*

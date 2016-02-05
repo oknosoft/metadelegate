@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html manifest='metadelegate.appcache' lang='ru'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>MetaDelegate - торговый представитель</title>
+
+    <!-- Startup configuration -->
+    <link rel="manifest" href="manifest.json">
+
+    <!--script>if (location.protocol !== "https:") location.protocol = "https:";</script-->
+
+    <link rel="icon" href="dist/imgs/fav-md32.png" type="image/png">
+    <link rel="shortcut icon" href="dist/imgs/fav-md32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="dist/imgs/fav-md32.png">
+
+</head>
+<body>
+
+
+<!--основные и дополнительные стили-->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/fontawesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/g/metadata(dhx_terrace.css+metadata.css)">
+<link rel="stylesheet" type="text/css" href="dist/metadelegate.css">
+
+<!-- библиотеки -->
+<!--script src="//cdn.jsdelivr.net/g/alasql,metadata@0.9.206(dhtmlx.min.js+metadata.min.js)"></script-->
+<script src="lib/alasql/alasql.min.js"></script>
+<script src="lib/dhtmlx_debug.js"></script>
+<script src="lib/metadata.js"></script>
+
+
+<!-- собственно, скрипт магазина -->
+<script src="dist/metadelegate.js"></script>
+<!--script src="dist/metadelegate.min.js"></script-->
+
+
+</body>
+</html>
