@@ -67,8 +67,8 @@ $p.iface.view_events = function (cell) {
 		}
 
 		if(!window.dhtmlXScheduler){
-			$p.load_script("lib/dhtmlxscheduler/dhtmlxscheduler.min.js", "script", create_scheduler);
-			$p.load_script("lib/dhtmlxscheduler/dhtmlxscheduler.css", "link");
+			$p.load_script("//oknosoft.github.io/metadata.js/lib/dhtmlxscheduler/dhtmlxscheduler.min.js", "script", create_scheduler);
+			$p.load_script("//oknosoft.github.io/metadata.js/lib/dhtmlxscheduler/dhtmlxscheduler.css", "link");
 		}else
 			create_scheduler();
 

@@ -24,6 +24,7 @@ $p.iface.view_clients = function (cell) {
 				t.list = $p.cat.Партнеры.form_list(t.carousel.cells("list"), {
 					hide_header: true
 				});
+				t.list.elmnts.cell_tree.collapse();
 			}
 
 		}

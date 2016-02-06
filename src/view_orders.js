@@ -1,5 +1,5 @@
 /**
- *
+ * http://localhost/metadelegate/#obj=cat.Партнеры&ref=cbcf497b-55bc-11d9-848a-00112f43529a&frm=doc&view=orders
  * Created 24.10.2015<br />
  * &copy; http://www.oknosoft.ru 2014-2015
  * @author  Evgeniy Malyarov
