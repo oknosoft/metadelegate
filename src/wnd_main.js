@@ -31,6 +31,11 @@ $p.settings = function (prm, modifiers) {
 
 	// гостевой пользователь
 	// КанинСА
+	// автономный режим для демки
+	prm.offline = true;
+	localStorage.setItem("delegate_offline", "true");
+
+	prm.files_date = 201601220000;
 
 	// по умолчанию, обращаемся к зоне 0
 	prm.zone = 0;
