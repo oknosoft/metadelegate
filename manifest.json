@@ -1,7 +1,7 @@
 {
   "lang": "ru",
   "name": "MetaDelegate - торговый представитель",
-  "short_name": "MetaDelegate",
+  "short_name": "Delegate",
   "icons": [
     {
       "src": "/metadelegate/dist/imgs/fav-md32.png",
