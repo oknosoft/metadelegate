@@ -256,11 +256,11 @@ $p.iface.view_clients = function (cell) {
 							show_doc(hprm.ref);
 
 
-					} else if($p.is_empty_guid(hprm.ref) || hprm.frm == "list"){
+					} else{
 
 						if(hprm.obj != "cat.Партнеры")
 							setTimeout(function () {
-								$p.iface.set_hash("cat.Партнеры");
+								$p.iface.set_hash("cat.Партнеры", "", "list");
 							});
 						else
 							show_list();
@@ -568,11 +568,11 @@ $p.iface.view_orders = function (cell) {
 							show_doc(hprm.ref);
 
 
-					} else if($p.is_empty_guid(hprm.ref) || hprm.frm == "list"){
+					} else if(!_tab || $p.is_empty_guid(hprm.ref) || hprm.frm == "list"){
 
 						if(!_tab)
 							setTimeout(function () {
-								$p.iface.set_hash("doc.ЗаказКлиента");
+								$p.iface.set_hash("doc.ЗаказКлиента", "", "list");
 							});
 						else
 							show_list();

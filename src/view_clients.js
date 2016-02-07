@@ -68,11 +68,11 @@ $p.iface.view_clients = function (cell) {
 							show_doc(hprm.ref);
 
 
-					} else if($p.is_empty_guid(hprm.ref) || hprm.frm == "list"){
+					} else{
 
 						if(hprm.obj != "cat.Партнеры")
 							setTimeout(function () {
-								$p.iface.set_hash("cat.Партнеры");
+								$p.iface.set_hash("cat.Партнеры", "", "list");
 							});
 						else
 							show_list();
