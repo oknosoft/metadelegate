@@ -88,6 +88,10 @@ $p.iface.oninit = function() {
 		{id: "about", text: "О программе", icon: "about_48.png"}
 	];
 
+	// гасим заставку
+	document.body.removeChild(document.querySelector("#delegate_splash"));
+
+	// создаём основной сайдбар
 	$p.iface.main = new dhtmlXSideBar({
 		parent: document.body,
 		icons_path: "dist/imgs/",
@@ -278,9 +282,10 @@ $p.iface.view_clients = function (cell) {
 			var hprm = $p.job_prm.parse_url(),
 				obj = hprm.obj || "cat.Партнеры";
 
-			setTimeout(function () {
-				$p.iface.set_hash(obj);
-			});
+			if(hprm.view == "clients")
+				setTimeout(function () {
+					$p.iface.set_hash(obj);
+				});
 		}
 
 		// Рисуем дополнительные элементы навигации
@@ -590,9 +595,10 @@ $p.iface.view_orders = function (cell) {
 			var hprm = $p.job_prm.parse_url(),
 				obj = hprm.obj || "doc.ЗаказКлиента";
 
-			setTimeout(function () {
-				$p.iface.set_hash(obj);
-			});
+			if(hprm.view == "orders")
+				setTimeout(function () {
+					$p.iface.set_hash(obj);
+				});
 		}
 
 		// Рисуем дополнительные элементы навигации

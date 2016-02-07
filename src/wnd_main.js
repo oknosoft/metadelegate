@@ -58,6 +58,10 @@ $p.iface.oninit = function() {
 		{id: "about", text: "О программе", icon: "about_48.png"}
 	];
 
+	// гасим заставку
+	document.body.removeChild(document.querySelector("#delegate_splash"));
+
+	// создаём основной сайдбар
 	$p.iface.main = new dhtmlXSideBar({
 		parent: document.body,
 		icons_path: "dist/imgs/",

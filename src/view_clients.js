@@ -90,9 +90,10 @@ $p.iface.view_clients = function (cell) {
 			var hprm = $p.job_prm.parse_url(),
 				obj = hprm.obj || "cat.Партнеры";
 
-			setTimeout(function () {
-				$p.iface.set_hash(obj);
-			});
+			if(hprm.view == "clients")
+				setTimeout(function () {
+					$p.iface.set_hash(obj);
+				});
 		}
 
 		// Рисуем дополнительные элементы навигации

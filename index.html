@@ -12,15 +12,38 @@
     <!-- Startup configuration -->
     <link rel="manifest" href="manifest.json">
 
-    <!--script>if (location.protocol !== "https:") location.protocol = "https:";</script-->
+    <script>if (location.protocol == 'http:') location.href = location.href.replace(/^http:/, 'https:')</script>
 
     <link rel="icon" href="dist/imgs/fav-md32.png" type="image/png">
     <link rel="shortcut icon" href="dist/imgs/fav-md32.png" type="image/png">
     <link rel="apple-touch-icon-precomposed" href="dist/imgs/fav-md32.png">
 
+    <style>
+        #delegate_splash {
+            width: 512px;
+            height: 128px;
+            position: relative;
+            left: 48%;
+            margin-left: -255px;
+            margin-top: 140px;
+            background-image:url(dist/imgs/splash.gif);
+        }
+        @media (max-width: 640px) {
+            #delegate_splash {
+                width: 340px;
+                height: 86px;
+                left: 48%;
+                margin-left: -170px;
+                margin-top: 100px;
+                background-size: cover;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
+<div id="delegate_splash"></div>
 
 <!--основные и дополнительные стили-->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/fontawesome/4.5/css/font-awesome.min.css">
@@ -28,16 +51,14 @@
 <link rel="stylesheet" type="text/css" href="dist/metadelegate.css">
 
 <!-- библиотеки -->
-<!--script src="//cdn.jsdelivr.net/g/alasql,metadata@0.9.206(dhtmlx.min.js+metadata.min.js)"></script-->
-<script src="lib/alasql/alasql.min.js"></script>
+<script src="//cdn.jsdelivr.net/g/alasql,metadata@0.9.206(dhtmlx.min.js+metadata.min.js)"></script>
+<!--script src="lib/alasql/alasql.min.js"></script>
 <script src="lib/dhtmlx_debug.js"></script>
-<script src="lib/metadata.js"></script>
-
+<script src="lib/metadata.js"></script-->
 
 <!-- собственно, скрипт магазина -->
-<script src="dist/metadelegate.js"></script>
-<!--script src="dist/metadelegate.min.js"></script-->
-
+<!--script src="dist/metadelegate.js"></script-->
+<script src="dist/metadelegate.min.js"></script>
 
 </body>
 </html>

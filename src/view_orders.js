@@ -144,9 +144,10 @@ $p.iface.view_orders = function (cell) {
 			var hprm = $p.job_prm.parse_url(),
 				obj = hprm.obj || "doc.ЗаказКлиента";
 
-			setTimeout(function () {
-				$p.iface.set_hash(obj);
-			});
+			if(hprm.view == "orders")
+				setTimeout(function () {
+					$p.iface.set_hash(obj);
+				});
 		}
 
 		// Рисуем дополнительные элементы навигации

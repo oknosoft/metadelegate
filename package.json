@@ -1,7 +1,7 @@
 {
   "name": "metadelegate",
   "description": "MetaDelegate - рабочее место торгового представителя",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "author": "Evgeniy Malyarov <info@oknosoft.ru> (http://www.oknosoft.ru)",
   "directories": {
     "example": "examples"
